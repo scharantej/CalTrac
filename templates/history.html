@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calorie Tracker History</title>
+</head>
+<body>
+<h1>Calorie Tracker History</h1>
+<table>
+<thead>
+<tr>
+<th>Meal Name</th>
+<th>Calories</th>
+<th>Date</th>
+</tr>
+</thead>
+<tbody>
+{% for meal in meals %}
+<tr>
+<td>{{ meal.name }}</td>
+<td>{{ meal.calories }}</td>
+<td>{{ meal.date }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</body>
+</html>
+
